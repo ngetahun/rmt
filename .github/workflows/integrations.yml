@@ -11,6 +11,8 @@ on: [pull_request]
 
 jobs:
   test:
+    env:
+      DANGER_GITHUB_API_TOKEN: ${ secrets.DANGER_GITHUB_API_TOKEN }
     services:
       mysql:
         image: mysql:latest
