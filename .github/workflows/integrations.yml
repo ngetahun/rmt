@@ -22,6 +22,7 @@ jobs:
           MYSQL_DATABASE: rmt_test
           MYSQL_USER: rmt
           MYSQL_PASSWORD: rmt
+        options: --socket '/var/run/mysqld/mysqld.sock'
 
     runs-on: ubuntu-latest
     strategy:
